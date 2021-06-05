@@ -30,8 +30,8 @@ def is_same_image(img_file1, img_file2):
         return False
 
 tsj = tsj_classifier.detectMultiScale(image_1, 1.06, 1,minSize=(50, 50))
-
-if tsj:
+print(tsj)
+if tsj.any():
     print("got tsj")
     # tsj_image = Image.open("images/image1.jpg")
     # tsj_image = tsj_image.convert("RGBA")
